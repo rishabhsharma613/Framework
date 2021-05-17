@@ -11,7 +11,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 public class FacebookLogin extends base {
-	
+		
 	@Test
 	
 	public void basePageNavigation() throws IOException

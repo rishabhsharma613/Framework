@@ -32,7 +32,9 @@ public class base {
 	{
 		
 		prop= new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\Nidhi\\workspaceRishabh\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		//FileInputStream fis = new FileInputStream("C:\\Users\\Nidhi\\workspaceRishabh\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream("src/main/java/resources/data.properties");
+		
 		
 		prop.load(fis);
 		String browserName= prop.getProperty("browser");
@@ -71,8 +73,6 @@ public class base {
 		TakesScreenshot ts= (TakesScreenshot)driver;
 		File source= ts.getScreenshotAs(OutputType.FILE);
 		String destinationFile= System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
-		//FileHandler.copy(source, new File(destinationFile));
-		//Files.copy(source, new File(destinationFile));
 		
 		try {
 		FileUtils.copyFile(source,new File(destinationFile));

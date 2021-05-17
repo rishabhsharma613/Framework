@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-17T18:06:31Z" name="Default suite" finished-at="2021-05-17T18:06:39Z" duration-ms="8381">
+  <suite started-at="2021-05-17T19:16:35Z" name="Default suite" finished-at="2021-05-17T19:20:37Z" duration-ms="241615">
     <groups>
     </groups>
-    <test started-at="2021-05-17T18:06:31Z" name="Default test" finished-at="2021-05-17T18:06:39Z" duration-ms="8381">
-      <class name="e2eProject.ValidateFields">
-        <test-method signature="basePageNavigation()[pri:0, instance:e2eProject.ValidateFields@79dc5318]" started-at="2021-05-17T18:06:31Z" name="basePageNavigation" finished-at="2021-05-17T18:06:39Z" duration-ms="7995" status="FAIL">
+    <test started-at="2021-05-17T19:16:35Z" name="Default test" finished-at="2021-05-17T19:20:37Z" duration-ms="241615">
+      <class name="e2eProject.FacebookLogin">
+        <test-method signature="basePageNavigation()[pri:0, instance:e2eProject.FacebookLogin@30ed9c6c]" started-at="2021-05-17T19:16:35Z" name="basePageNavigation" finished-at="2021-05-17T19:18:45Z" duration-ms="130146" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -15,8 +15,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-O3UVQ4DE', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c591a165a0ee1c839e868520ba0b934]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afa983486fc2d4dcae18378790071a21]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -24,8 +24,8 @@ Session ID: 5c591a165a0ee1c839e868520ba0b934]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-O3UVQ4DE', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56880}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c591a165a0ee1c839e868520ba0b934
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Nidhi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: afa983486fc2d4dcae18378790071a21
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -38,7 +38,7 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at e2eProject.ValidateFields.basePageNavigation(ValidateFields.java:22)
+at e2eProject.FacebookLogin.basePageNavigation(FacebookLogin.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -70,11 +70,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:e2eProject.ValidateFields@79dc5318]" started-at="2021-05-17T18:06:39Z" name="endTest" finished-at="2021-05-17T18:06:39Z" duration-ms="224" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:e2eProject.FacebookLogin@30ed9c6c]" started-at="2021-05-17T19:20:36Z" name="endTest" finished-at="2021-05-17T19:20:37Z" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- e2eProject.ValidateFields -->
+      </class> <!-- e2eProject.FacebookLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
