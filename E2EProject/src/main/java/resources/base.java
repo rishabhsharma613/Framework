@@ -39,7 +39,7 @@ public class base {
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\work\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E2EProject\\chromedriver.exe");
 			ChromeOptions co=new ChromeOptions();
 			co.addArguments("--disable-notifications");
 			driver= new ChromeDriver(co);
