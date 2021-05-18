@@ -1,9 +1,12 @@
 package e2eProject;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.junit.AfterClass;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -24,13 +27,12 @@ public class FacebookLogin extends base {
 	l.getEmail().sendKeys("rishabh.s.rishi"); // driver.findElement(by.id)
 	l.getpassword().sendKeys("hgdjkhnsdjkcbhdjcb");
 	l.clickLogin().click();
+	Assert.assertTrue(false);
 	
 	}
 	
-	@AfterTest
-	public void endTest()
-	{
-		driver.close();
-	}
+	/*
+	 * @AfterTest public void endTest() { driver.close(); }
+	 */
 	
 }

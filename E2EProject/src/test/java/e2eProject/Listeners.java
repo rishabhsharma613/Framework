@@ -11,6 +11,7 @@ import resources.base;
 
 public class Listeners extends base implements ITestListener {
 
+
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
@@ -60,6 +61,8 @@ public class Listeners extends base implements ITestListener {
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Test Finished");
 		
 	}
 	

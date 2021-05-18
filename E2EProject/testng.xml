@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
+<suite name="Suite">
 <listeners>
-<listener class-name="e2eProject.Listeners"></listener>
+<listener class-name="e2eProject.Listeners"/>
 </listeners>
 
   <test name="Test">
@@ -11,21 +11,5 @@
     </classes>
   </test>
   
-  <test name="Test1">
-    <classes>
-      <class name="e2eProject.ValidateFields"/>
-    </classes>
-  </test>
   
-  <test name="Test2">
-    <classes>
-      <class name="e2eProject.LaunchGoogleMeets"/>
-    </classes>
-  </test>
-  
-  <test name="Test3">
-    <classes>
-      <class name="e2eProject.ValidateFacebookTitle"/>
-    </classes>
-  </test>
 </suite>
