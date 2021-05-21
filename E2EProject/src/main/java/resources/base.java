@@ -33,7 +33,7 @@ public class base {
 		
 		prop= new Properties();
 		//FileInputStream fis = new FileInputStream("C:\\Users\\Nidhi\\workspaceRishabh\\E2EProject\\src\\main\\java\\resources\\data.properties");
-		FileInputStream fis = new FileInputStream("src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"src/main/java/resources/data.properties");
 		
 		
 		prop.load(fis);
@@ -46,6 +46,7 @@ public class base {
 			co.addArguments("--disable-notifications");
 			driver= new ChromeDriver(co);
 			driver.manage().window().maximize();
+		
 		}
 		
 		else if(browserName.equals("firefox"))
@@ -75,7 +76,8 @@ public class base {
 		String destinationFile= System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
 		
 		try {
-		FileUtils.copyFile(source,new File(destinationFile));
+			
+			FileUtils.copyFile(source,new File(destinationFile));
 		}
 		
 		catch(Exception e)

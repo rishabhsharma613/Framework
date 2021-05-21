@@ -14,9 +14,9 @@ public class LandingPage {
 		
 	}
 	
-	By email= By.id("email");
-	By password= By.id("pass");	
-	By login=By.name("login");
+	private By email= By.id("email");
+	private By password= By.id("pass");	
+	private By login=By.name("login");
 	
 	public WebElement clickLogin()
 	{
